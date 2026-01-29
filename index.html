@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LIT (Literature in Together) - AI assistant for understanding English Literature">
+    <title>LIT - Literature in Together</title>
+    <link rel="icon" type="image/png" href="appLogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="appLogo.png" alt="LIT Logo" class="nav-logo">
+                <span class="nav-title">LIT</span>
+            </div>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="메뉴 토글">☰</button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">홈</a></li>
+                <li><a href="#features" class="nav-link">기능</a></li>
+                <li><a href="#installation" class="nav-link">설치</a></li>
+                <li><a href="#changelog" class="nav-link">변경사항</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="appLogo.png" alt="LIT Logo" class="hero-logo">
+                <h1 class="hero-title">Literature in Together</h1>
+                <p class="hero-subtitle">AI assistant for understanding English Literature</p>
+                <p class="hero-description">
+                    LIT은 영어 문학 학습을 위한 AI 기반 학습 애플리케이션입니다. <br>
+                    개인 학습과 그룹 협업을 통해 문학 작품을 더 깊이 이해할 수 있도록 도와줍니다. <br>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#installation" class="btn btn-primary">다운로드</a>
+                    <a href="#features" class="btn btn-secondary">기능 알아보기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Features</h2>
+            <div class="features-slider-wrapper">
+                <button class="slider-btn slider-btn-prev" aria-label="이전 슬라이드">‹</button>
+                <div class="features-slider">
+                    <div class="features-track">
+                        <!-- Focusing Feature -->
+                        <div class="feature-card">
+                            <div class="feature-image-wrapper">
+                                <img src="assets/Focusing.png" alt="Focusing 기능" class="feature-image">
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">Focusing</h3>
+                                <p class="feature-subtitle">Individual AI-assisted study</p>
+                                <p class="feature-description">
+                                    개인 맞춤형 AI 학습 어시스턴트를 통해 문학 작품을 깊이 있게 학습할 수 있습니다. 
+                                    PDF 문서를 업로드하고 AI의 도움을 받아 작품을 분석하고 이해하세요.
+                                </p>
+                                <ul class="feature-list">
+                                    <li>PDF 문서 업로드 및 뷰어</li>
+                                    <li>AI 학습 어시스턴트</li>
+                                    <li>즐겨찾기 및 북마크</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Brainstorming Feature -->
+                        <div class="feature-card">
+                            <div class="feature-image-wrapper">
+                                <img src="assets/BrainStorming.png" alt="Brain Storming 기능" class="feature-image">
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">Brain Storming</h3>
+                                <p class="feature-subtitle">Collaborative group-based learning</p>
+                                <p class="feature-description">
+                                    그룹 스터디를 통해 함께 학습하고 토론하세요. 
+                                    여러 사람과 함께 작품을 분석하고 아이디어를 공유하며 더 풍부한 이해를 얻을 수 있습니다.
+                                </p>
+                                <ul class="feature-list">
+                                    <li>그룹 스터디 생성 및 참여</li>
+                                    <li>실시간 채팅 및 토론</li>
+                                    <li>공동 작업 문서 관리</li>
+                                    <li>참여자 관리 및 알림</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Study Management Feature -->
+                        <div class="feature-card">
+                            <div class="feature-image-wrapper">
+                                <img src="assets/StudyManagement.png" alt="Study Management 기능" class="feature-image">
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">Study Management</h3>
+                                <p class="feature-subtitle">Organize your learning journey</p>
+                                <p class="feature-description">
+                                    학습 자료를 체계적으로 관리하고 최근 학습 내용을 빠르게 접근할 수 있습니다. 
+                                    개인화된 홈 화면에서 모든 학습 활동을 한눈에 확인하세요.
+                                </p>
+                                <ul class="feature-list">
+                                    <li>최근 학습 문서 조회</li>
+                                    <li>즐겨찾기 관리</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Duplicate cards for infinite scroll -->
+                        <div class="feature-card">
+                            <div class="feature-image-wrapper">
+                                <img src="assets/Focusing.png" alt="Focusing 기능" class="feature-image">
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">Focusing</h3>
+                                <p class="feature-subtitle">Individual AI-assisted study</p>
+                                <p class="feature-description">
+                                    개인 맞춤형 AI 학습 어시스턴트를 통해 문학 작품을 깊이 있게 학습할 수 있습니다. 
+                                    PDF 문서를 업로드하고 AI의 도움을 받아 작품을 분석하고 이해하세요.
+                                </p>
+                                <ul class="feature-list">
+                                    <li>PDF 문서 업로드 및 뷰어</li>
+                                    <li>AI 학습 어시스턴트</li>
+                                    <li>개인 학습 진행 상황 관리</li>
+                                    <li>즐겨찾기 및 북마크</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-image-wrapper">
+                                <img src="assets/BrainStorming.png" alt="Brain Storming 기능" class="feature-image">
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">Brain Storming</h3>
+                                <p class="feature-subtitle">Collaborative group-based learning</p>
+                                <p class="feature-description">
+                                    그룹 스터디를 통해 함께 학습하고 토론하세요. 
+                                    여러 사람과 함께 작품을 분석하고 아이디어를 공유하며 더 풍부한 이해를 얻을 수 있습니다.
+                                </p>
+                                <ul class="feature-list">
+                                    <li>그룹 스터디 생성 및 참여</li>
+                                    <li>실시간 채팅 및 토론</li>
+                                    <li>공동 작업 문서 관리</li>
+                                    <li>참여자 관리 및 알림</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-image-wrapper">
+                                <img src="assets/StudyManagement.png" alt="Study Management 기능" class="feature-image">
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">Study Management</h3>
+                                <p class="feature-subtitle">Organize your learning journey</p>
+                                <p class="feature-description">
+                                    학습 자료를 체계적으로 관리하고 최근 학습 내용을 빠르게 접근할 수 있습니다. 
+                                    개인화된 홈 화면에서 모든 학습 활동을 한눈에 확인하세요.
+                                </p>
+                                <ul class="feature-list">
+                                    <li>최근 학습 문서 조회</li>
+                                    <li>즐겨찾기 관리</li>
+                                    <li>학습 진행 상황 추적</li>
+                                    <li>검색 및 필터링</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn slider-btn-next" aria-label="다음 슬라이드">›</button>
+            </div>
+            <div class="slider-dots">
+                <button class="dot active" data-index="0" aria-label="슬라이드 1"></button>
+                <button class="dot" data-index="1" aria-label="슬라이드 2"></button>
+                <button class="dot" data-index="2" aria-label="슬라이드 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="installation" class="installation">
+        <div class="container">
+            <h2 class="section-title">설치하기</h2>
+            <p class="section-description">
+                LIT은 Windows와 macOS를 지원합니다. 아래에서 운영체제에 맞는 버전을 다운로드하세요.
+            </p>
+            
+            <div class="download-grid">
+                <!-- Windows Download -->
+                <div class="download-card">
+                    <div class="download-icon">🪟</div>
+                    <h3 class="download-title">Windows</h3>
+                    <p class="download-description">
+                        Windows 10 이상 버전을 지원합니다.
+                    </p>
+                    <div class="download-info">
+                        <span class="download-version">버전 1.0.0</span>
+                        <span class="download-size">약 150 MB</span>
+                    </div>
+                    <a href="#" class="btn btn-primary download-btn" id="download-windows">
+                        Windows 다운로드
+                    </a>
+                    <p class="download-note">
+                        설치 파일(.exe)을 다운로드하여 실행하세요.
+                    </p>
+                </div>
+
+                <!-- macOS Download -->
+                <div class="download-card">
+                    <div class="download-icon">🍎</div>
+                    <h3 class="download-title">macOS</h3>
+                    <p class="download-description">
+                        macOS 10.13 이상 버전을 지원합니다. Apple Silicon과 Intel 모두 지원합니다.
+                    </p>
+                    <div class="download-info">
+                        <span class="download-version">버전 1.0.0</span>
+                        <span class="download-size">약 150 MB</span>
+                    </div>
+                    <a href="#" class="btn btn-primary download-btn" id="download-macos">
+                        macOS 다운로드
+                    </a>
+                    <p class="download-note">
+                        DMG 파일을 다운로드하여 Applications 폴더로 드래그하세요.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Installation Instructions -->
+            <div class="installation-instructions">
+                <h3 class="instructions-title">설치 가이드</h3>
+                
+                <div class="instructions-tabs">
+                    <button class="tab-btn active" data-tab="windows-install">Windows</button>
+                    <button class="tab-btn" data-tab="macos-install">macOS</button>
+                </div>
+
+                <div class="tab-content active" id="windows-install">
+                    <ol class="instructions-list">
+                        <li>위의 "Windows 다운로드" 버튼을 클릭하여 설치 파일을 다운로드합니다.</li>
+                        <li>다운로드한 <code>LIT Setup 1.0.0.exe</code> 파일을 실행합니다.</li>
+                        <li>설치 마법사의 안내에 따라 설치를 진행합니다.</li>
+                        <li>설치가 완료되면 시작 메뉴에서 LIT을 실행할 수 있습니다.</li>
+                    </ol>
+                </div>
+
+                <div class="tab-content" id="macos-install">
+                    <ol class="instructions-list">
+                        <li>위의 "macOS 다운로드" 버튼을 클릭하여 DMG 파일을 다운로드합니다.</li>
+                        <li>다운로드한 DMG 파일을 더블클릭하여 마운트합니다.</li>
+                        <li>DMG 창이 열리면 LIT 앱을 Applications 폴더로 드래그합니다.</li>
+                        <li>Applications 폴더에서 LIT 앱을 실행합니다.</li>
+                        <li>첫 실행 시 보안 경고가 나타날 수 있습니다. 시스템 설정에서 허용해주세요.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Changelog Section -->
+    <section id="changelog" class="changelog">
+        <div class="container">
+            <h2 class="section-title">변경 사항</h2>
+            <div class="changelog-container">
+                <!-- Version 1.0.0 -->
+                <div class="version-card">
+                    <div class="version-header">
+                        <h3 class="version-title">Version 1.0.0</h3>
+                        <span class="version-date">2024-01-01</span>
+                    </div>
+                    <div class="version-content">
+                        <h4 class="version-section-title">🎉 첫 공식 출시</h4>
+                        <div class="version-changes">
+                            <div class="change-category">
+                                <h5 class="change-type added">Added</h5>
+                                <ul>
+                                    <li>Focusing 기능: 개인 AI 학습 어시스턴트</li>
+                                    <li>Brain Storming 기능: 그룹 스터디 및 협업</li>
+                                    <li>PDF 문서 뷰어 및 업로드 기능</li>
+                                    <li>Google 로그인 연동</li>
+                                    <li>홈 화면 및 학습 관리 기능</li>
+                                    <li>설정 페이지 및 프로필 관리</li>
+                                    <li>알림 시스템</li>
+                                </ul>
+                            </div>
+                            <div class="change-category">
+                                <h5 class="change-type">Platform</h5>
+                                <ul>
+                                    <li>Windows 10+ 지원</li>
+                                    <li>macOS 10.13+ 지원 (Intel & Apple Silicon)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Future versions placeholder -->
+                <div class="version-card future">
+                    <div class="version-header">
+                        <h3 class="version-title">Upcoming Features</h3>
+                    </div>
+                    <div class="version-content">
+                        <p class="future-note">
+                            향후 업데이트에서 추가될 기능들을 준비 중입니다. 
+                            버전 업데이트는 Semantic Versioning을 따릅니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="appLogo.png" alt="LIT Logo" class="footer-logo">
+                    <span class="footer-title">LIT</span>
+                </div>
+                <p class="footer-description">
+                    Literature in Together - AI assistant for understanding English Literature
+                </p>
+                <div class="footer-links">
+                    <a href="https://github.com/lhd-lit" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <span class="footer-separator">•</span>
+                    <a href="#changelog" class="footer-link">변경사항</a>
+                    <span class="footer-separator">•</span>
+                    <a href="#installation" class="footer-link">다운로드</a>
+                </div>
+                <p class="footer-copyright">
+                    © 2026 LIT. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
