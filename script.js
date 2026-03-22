@@ -48,19 +48,6 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Download button placeholders (실제 다운로드 링크로 교체 필요)
-document.getElementById('download-windows')?.addEventListener('click', (e) => {
-    e.preventDefault();
-    // TODO: 실제 Windows 다운로드 링크로 교체
-    alert('Windows 다운로드 링크가 곧 제공될 예정입니다.');
-});
-
-document.getElementById('download-macos')?.addEventListener('click', (e) => {
-    e.preventDefault();
-    // TODO: 실제 macOS 다운로드 링크로 교체
-    alert('macOS 다운로드 링크가 곧 제공될 예정입니다.');
-});
-
 // Intersection Observer for fade-in animations
 const observerOptions = {
     threshold: 0.1,
