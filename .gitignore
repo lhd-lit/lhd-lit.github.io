@@ -1,1 +1,4 @@
-
+# 설치 파일은 GitHub Releases에만 올리고 이 저장소에는 포함하지 않습니다
+releases/*.exe
+releases/*.dmg
+releases/*.zip
